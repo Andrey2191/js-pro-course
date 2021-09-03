@@ -24,21 +24,19 @@ p.catch(() => {
 // 3 задача
 const p1 = new Promise((resolve, reject) => {
     setTimeout(() => {
-        resolve(Promise resolved)
+        resolve(Promise 1 resolved)
     }, Math.floor(Math.random() * 5000))
 })
 
 const p2 = new Promise((resolve, reject) => {
     setTimeout(() => {
-        console.log('2');
-        resolve()
+        resolve(Promise 2 resolved)
     }, Math.floor(Math.random() * 5000))
 })
 
 const p3 = new Promise((resolve, reject) => {
     setTimeout(() => {
-        console.log('3');
-        resolve()
+        resolve(Promise 3 resolved)
     }, Math.floor(Math.random() * 5000))
 })
 
