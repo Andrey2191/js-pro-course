@@ -24,8 +24,7 @@ p.catch(() => {
 // 3 задача
 const p1 = new Promise((resolve, reject) => {
     setTimeout(() => {
-        console.log('1');
-        resolve()
+        resolve(Promise resolved)
     }, Math.floor(Math.random() * 5000))
 })
 
@@ -43,8 +42,8 @@ const p3 = new Promise((resolve, reject) => {
     }, Math.floor(Math.random() * 5000))
 })
 
-Promise.all([p1, p2, p3]).then(() => {
-    console.log();
+Promise.all([p1, p2, p3]).then((arr) => {
+let sum = arr.reduce((acc, value) => acc + value);
 })
 
 
